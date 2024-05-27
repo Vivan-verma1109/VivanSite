@@ -1,0 +1,40 @@
+@font-face {
+  font-family: 'Minecraft';
+  src: url('./fonts/minecraft.ttf') format('truetype');
+}
+
+.Nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.Navbar_element {
+  padding: 20px;
+  color: gold;
+  text-decoration: none;
+  border-radius: 2.5vh;
+  transition: 0.35s;
+  font-weight: bold;
+  font-style: italic;
+  background-color: royalblue;
+  margin-right: 15px;
+  font-family: 'Minecraft', sans-serif;
+  z-index: 2;
+}
+
+.Navbar_element:hover {
+  color: gray;
+  background-color: rosybrown;
+}
+
+.Navbar_element.active {
+  background-color: rosybrown;
+}
