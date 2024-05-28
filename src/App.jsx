@@ -13,12 +13,16 @@ const App = () => {
   }
 
   return (
-    <div className="background">
+    
+    <>
+      <button className="button">
+        <img src={graceImage} onClick={clickTest} className="navGrace"/>
+      </button>
+
+      <div className="background">
       <div className="pageMain">
         <br />
-        <button className="butt">
-          <img src={graceImage} onClick={clickTest} className="navGrace"/>
-        </button>
+
         <Navigation />
         <Routes>
           <Route path="/" element={<Ghar />} />
@@ -27,6 +31,9 @@ const App = () => {
         </Routes>
       </div>
     </div>
+    
+    
+    </>
   );
 };
 

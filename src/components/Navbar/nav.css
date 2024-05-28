@@ -29,7 +29,7 @@
     background-color: royalblue;
     margin-right: 15px;
     font-family: "MC";
-    z-index: 2;
+    z-index: -1;
   }
   
   .Navbar_element:hover {
