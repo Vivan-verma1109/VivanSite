@@ -1,41 +1,43 @@
+
 @font-face {
-  font-family: "MC";   /*Can be any text*/
-  src: local("MantiniaRegular"),
-    url("./fonts/MantiniaRegular.otf") format("truetype");
-}
-
-.Nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-size: cover;
-  background-position: center;
-  padding: 10px 0;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1;
-}
-
-.Navbar_element {
-  padding: 20px;
-  color: gold;
-  text-decoration: none;
-  border-radius: 2.5vh;
-  transition: 0.35s;
-  font-weight: bold;
-  font-style: italic;
-  background-color: royalblue;
-  margin-right: 15px;
-  font-family: "MC";
-  z-index: 2;
-}
-
-.Navbar_element:hover {
-  color: gray;
-  background-color: rosybrown;
-}
-
-.Navbar_element.active {
-  background-color: rosybrown;
-}
+    font-family: "MC";   /*Can be any text*/
+    src: local("MantiniaRegular"),
+      url("./fonts/MantiniaRegular.otf") format("truetype");
+  }
+  
+  .Nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  .Navbar_element {
+    padding: 20px;
+    color: gold;
+    text-decoration: none;
+    border-radius: 2.5vh;
+    transition: 0.35s;
+    font-weight: bold;
+    font-style: italic;
+    background-color: royalblue;
+    margin-right: 15px;
+    font-family: "MC";
+    z-index: 2;
+  }
+  
+  .Navbar_element:hover {
+    color: gray;
+    background-color: rosybrown;
+  }
+  
+  .Navbar_element.active {
+    background-color: rosybrown;
+  }
+  

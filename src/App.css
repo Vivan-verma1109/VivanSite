@@ -20,10 +20,11 @@ html, body {
  
  
  
- .pageMain{
-  background-image: url("https://assetsio.gnwcdn.com/elden-ring-all-site-of-grace-locations-8042-1648646338309.jpg?width=1600&height=900&fit=crop&quality=100&format=png&enable=upscale&auto=webp");
-  background-size: 100px;
-  
+ .navGrace{
+  width: 200px;
+  position: absolute;
   z-index: 100;
+  top: 89vh;
+  left:145vh;
   background-repeat: no-repeat;
  }
