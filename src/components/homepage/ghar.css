@@ -1,31 +1,31 @@
 
 @font-face {
   font-family: "MC";   /*Can be any text*/
-  src: local("Minecraftia-Regular"),
-    url("./fonts/Minecraftia-Regular.ttf") format("truetype");
+  src: local("MantiniaRegular"),
+    url("./fonts/MantiniaRegular.otf") format("truetype");
 }
 
 
 .typewriter {
   display: flex;
-  color: darkgreen;
+  color: rgb(2, 28, 161);
   justify-content: center; 
   align-items: center;
-  height: 70vh; /* Full height of the viewport */
+  height: 90vh; 
   user-select: none;
 }
 
 .typewriter h1 {
-  overflow: hidden;
-  font-family: "MC";
-  font-size: 3em;
+  overflow:hidden;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 3.5em;
   white-space: nowrap;
-  animation: typing 1.5s steps(70, end);
+  animation: typing 2s steps(70, end);
 }
 
 
 /* The typing effect */
 @keyframes typing {
   from { width: 0 }
-  to { width: 19ch }
+  to { width: 21.58ch}
 }

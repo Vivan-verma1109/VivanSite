@@ -5,7 +5,7 @@ const Ghar = () => {
         <>
         <div class = "home">
             <div class="typewriter">
-            <h1>Welcome to my Portfolio.</h1>
+            <h1>Welcome to my Portfolio</h1>
             </div>   
         </div>    
         </>
