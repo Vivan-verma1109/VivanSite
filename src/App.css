@@ -18,13 +18,11 @@ html, body {
     z-index: -1;
   }
  
- 
- 
+ .butt{
+  background-color: transparent;
+  border: none;
+ }
+
  .navGrace{
-  width: 200px;
-  position: absolute;
-  z-index: 100;
-  top: 89vh;
-  left:145vh;
-  background-repeat: no-repeat;
+  
  }
