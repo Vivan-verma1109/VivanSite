@@ -1,6 +1,7 @@
 @font-face {
-  font-family: 'Minecraft';
-  src: url('./fonts/minecraft.ttf') format('truetype');
+  font-family: "MC";   /*Can be any text*/
+  src: local("MantiniaRegular"),
+    url("./fonts/MantiniaRegular.otf") format("truetype");
 }
 
 .Nav {
@@ -26,7 +27,7 @@
   font-style: italic;
   background-color: royalblue;
   margin-right: 15px;
-  font-family: 'Minecraft', sans-serif;
+  font-family: "MC";
   z-index: 2;
 }
 
