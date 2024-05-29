@@ -5,31 +5,46 @@ import Navigation from "./components/Navbar/Navigation";
 import Projects from "./components/Projects/projects";
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
-import graceImage from "/images/grace-removebg.png";
+import bonfire from "/images/bonfire.gif";
 
 const App = () => {
-  const [showNavigation, setShowNavigation] = useState(false);
+  const [showNavigation, setShowNavigation] = useState(true);
+  const [showSquare, setShowSquare] = useState(false);
+  const [isHidingSquare, setIsHidingSquare] = useState(false);
+  const [clickCount, setClickCount] = useState(-1);
 
   const clickTest = () => {
-    setShowNavigation((prevState) => !prevState);
+    setClickCount((prevCount) => prevCount + 1);
+    setShowSquare((prevShowSquare) => !prevShowSquare);
+    setShowNavigation((prevShowNavigation) => !prevShowNavigation);
+    if (showSquare && isHidingSquare) {
+      setIsHidingSquare(false);
+    }
   };
 
   return (
     <>
       <div className="background" />
-
       <div className="container">
         <div className="welcome">
           <h1>welcome to my portfolio</h1>
         </div>
       </div>
 
-      <div className="buttons">
+      <div className="button1">
+        <div className="square" />
+
         <button>
-          <img src={graceImage} onClick={clickTest} className="navGrace" />
+          <img src={bonfire} onClick={clickTest} className="bonfire" />
         </button>
       </div>
+      <div
+        className={`square ${isHidingSquare ? "hidden" : ""} ${
+          clickCount % 2 === 0 ? "even-click" : "odd-click"
+        }`}
+      ></div>
       {showNavigation && <Navigation />}
+
       <div className="pageMain">
         <br />
 

@@ -48,15 +48,48 @@ html, body {
   z-index: 1;
 }
 
-.navGrace{
-  width: 150px;
-  left: -1vh;
-  top: 90vh;
+.bonfire:active{
+  opacity: 0.8;
+}
+
+.bonfire{
+  width: 250px;
+  left: -7vh;
+  top: 86vh;
   position: relative;
   z-index: 2;
 }
 
-@keyframes elongate{
-  from {height: 0}
-  to {height: 100%} 
+@keyframes elongate {
+  from { height: 0; }
+  to { height: 50%; opacity: 0.5;}
+}
+
+@keyframes shrink {
+  from { height: 45vh; }
+  to { height: 0; opacity: 0; }
+}
+
+.square {
+  position: absolute;
+  z-index: 2;
+  width: 15vh;
+  margin: 1vh;
+  height: 45vh;
+  border-radius: 7.5vh;
+  bottom: 10vh;
+}
+
+.square.hidden {
+  animation: shrink 2s forwards;
+}
+
+.square.even-click {
+  background-color: rosybrown;
+  animation: shrink 2s forwards;
+}
+
+.square.odd-click {
+  background-color: rosybrown;
+  animation: elongate 2s forwards;
 }
