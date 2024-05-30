@@ -1,26 +1,81 @@
-.entire{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-color: transparent;
-    position: absolute;
-    user-select: none;
-    width: 15vh;
-    margin: 1vh;
-    border-radius: 7.5vh;
-    bottom: 12vh;
+.entire {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  position: absolute;
+  user-select: none;
+  width: 15vh;
+  margin: 1vh;
+  border-radius: 7.5vh;
+  bottom: 12vh;
 }
 
 .aboutIcon1 {
-    width: 100px;
+  width: 100px;
+  z-index: 2;
+  position: absolute;
+  bottom: 35vh;
+  animation: move 3s;
+}
+
+.proj1 {
+  width: 150px;
+  z-index: 2;
+  position: absolute;
+  bottom: 17.5vh;
+  animation: move2 3s;
+}
+
+.home1{
+    width: 80px;
     z-index: 2;
-    position: absolute; 
-    bottom: 35vh;
-    animation: move 3s;
+    position: absolute;
+    bottom: 5vh;
+    animation: move3 3s;
 }
 
 @keyframes move {
-    from { bottom: 0vh; opacity: 0;}
-    to { bottom: 35vh; opacity: 1;}
+  from {
+    bottom: 0vh;
+    opacity: 0;
+  }
+  to {
+    bottom: 35vh;
+    opacity: 1;
+  }
+}
+
+@keyframes move2 {
+  from {
+    bottom: 0vh;
+    opacity: 0;
+  }
+  to {
+    bottom: 17.5vh;
+    opacity: 1;
+  }
+}
+
+@keyframes move3 {
+  from {
+    bottom: 0vh;
+    opacity: 0;
+  }
+  to {
+    bottom: 5vh;
+    opacity: 1;
+  }
+}
+
+@keyframes reverse {
+  from {
+    bottom: 35vh;
+    opacity: 1;
+  }
+  to {
+    bottom: 0vh;
+    opacity: 0;
+  }
 }
