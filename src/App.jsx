@@ -38,7 +38,7 @@ const App = () => {
           clickCount % 2 === 0 ? "even-click" : "odd-click"
         }`}
       ></div>
-      {showNavigation && <Navigation />}
+      {<Navigation showNavigation={showNavigation} />}
 
       <div className="pageMain">
         <br />
