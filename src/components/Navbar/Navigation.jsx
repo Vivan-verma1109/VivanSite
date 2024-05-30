@@ -7,16 +7,8 @@ const Navigation = () => {
 
   return (
     <>
-      <div className="Nav">
-        <NavLink exact to="/" className="Navbar_element">
-          Home
-        </NavLink>
-        <NavLink to="/about" className="Navbar_element">
-          About Me
-        </NavLink>
-        <NavLink to="/projects" className="Navbar_element">
-          Projects
-        </NavLink>
+      <div class="entire">
+        <img src="https://static.thenounproject.com/png/992984-200.png" className = "aboutIcon1"/>
       </div>
     </>
   );

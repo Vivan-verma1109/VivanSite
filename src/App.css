@@ -17,17 +17,22 @@ html, body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background-color: transparent;
   width: 100vw;
   position: absolute;
+  user-select: none;
+
 }
 
 .welcome h1{
   overflow: hidden;
   font-size: 6vh;
+  user-select: none;
   color: rgb(89, 50, 50);
   font-family: "MC";
   animation: fadein 2.5s;
 }
+
 
 @keyframes fadein {
   from { opacity: 0; }
@@ -41,6 +46,8 @@ html, body {
   background-image: url("https://api.wallpapers.ai/static/downloads/98e970e6bfef4cb8936c6480cb57f481/upscaled/000000_490936417_kdpmpp2m15_PS7.5_elden_ring_landscape._digital_art_concept_art_[upscaled].jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  z-index: -1;
+  user-select: none;
 }
 
 .pageMain {
@@ -56,17 +63,17 @@ html, body {
   width: 250px;
   left: -7.7vh;
   top: 85vh;
+  user-select: none;
   position: relative;
-  z-index: 2;
 }
 
 @keyframes elongate {
   from { height: 0; opacity: 0;}
-  to { height: 50%; opacity: 0.7;}
+  to { height: 50%; opacity: 0.5;}
 }
 
 @keyframes shrink {
-  from { height: 45vh; opacity: 0.7;}
+  from { height: 45vh; opacity: 0.5;}
   to { height: 0; opacity: 0; }
 }
 
@@ -75,6 +82,7 @@ html, body {
   z-index: 2;
   width: 15vh;
   margin: 1vh;
+  user-select: none;
   height: 45vh;
   border-radius: 7.5vh;
   bottom: 12vh;
@@ -82,9 +90,11 @@ html, body {
 
 .square.hidden {
   animation: shrink 2s forwards;
+  
 }
 
 .square.even-click {
+  
   background-color: rosybrown;
   animation: shrink 2s forwards;
 }
@@ -93,3 +103,5 @@ html, body {
   background-color: rosybrown;
   animation: elongate 2s forwards;
 }
+
+

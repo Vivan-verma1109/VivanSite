@@ -31,13 +31,8 @@ const App = () => {
         </div>
       </div>
 
-      <div className="button1">
-        <div className="square" />
+      <img src={bonfire} onClick={clickTest} className="bonfire" />
 
-        <button>
-          <img src={bonfire} onClick={clickTest} className="bonfire" />
-        </button>
-      </div>
       <div
         className={`square ${isHidingSquare ? "hidden" : ""} ${
           clickCount % 2 === 0 ? "even-click" : "odd-click"
