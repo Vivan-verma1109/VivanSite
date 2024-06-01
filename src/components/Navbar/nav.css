@@ -12,21 +12,24 @@
   bottom: 12vh;
 }
 
+
 .aboutIcon1 {
   width: 100px;
   z-index: 2;
+  left: 15px;
   position: absolute;
   bottom: 35vh;
-  animation: move1 3s forwards;
+  animation: move1 2s forwards;
 }
 
 .aboutIcon2 {
   width: 100px;
   z-index: 2;
+  left: 15px;
   position: absolute;
   bottom: 0;
   opacity: 0;
-  animation: move2 1.3s forwards;
+  animation: back1 1.3s forwards;
 }
 
 @keyframes move1 {
@@ -40,13 +43,96 @@
   }
 }
 
-@keyframes move2 {
+@keyframes back1 {
   from {
     bottom: 35vh;
     opacity: 1;
   }
   to {
     bottom: 0;
+    opacity: 0;
+  }
+}
+
+.proj1 {
+  width: 150px;
+  z-index: 2;
+  left: -10px;
+  position: absolute;
+  bottom: 20vh;
+  opacity: 1;
+  animation: move2 2s;
+}
+
+.proj2 {
+  width: 150px;
+  z-index: 2;
+  left: -10px;
+  position: absolute;
+  opacity: 0;
+  bottom: 0;
+  animation: back2 1s;
+}
+@keyframes move2 {
+  from {
+    bottom: 0vh;
+    opacity: 0;
+  }
+  to {
+    bottom: 20vh;
+    opacity: 1;
+  }
+}
+
+@keyframes back2 {
+  from {
+    bottom: 20vh;
+    opacity: 1;
+  }
+  to {
+    bottom: 0vh;
+    opacity: 0;
+  }
+}
+
+.home1 {
+  width: 80px;
+  z-index: 2;
+  position: absolute;
+  opacity: 1;
+  left: 25px;
+  bottom: 10vh;
+  animation: move3 2s;
+}
+
+@keyframes move3 {
+  from {
+    bottom: 0vh;
+    opacity: 0;
+  }
+  to {
+    bottom: 10vh;
+    opacity: 1;
+  }
+}
+
+.home2 {
+  width: 80px;
+  z-index: 2;
+  left: 25px;
+  position: absolute;
+  opacity: 0;
+  bottom: 0;
+  animation: back3 1s;
+}
+
+@keyframes back3 {
+  from {
+    bottom: 10vh;
+    opacity: 1;
+  }
+  to {
+    bottom: 0vh;
     opacity: 0;
   }
 }

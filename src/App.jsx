@@ -21,7 +21,6 @@ const App = () => {
       setIsHidingSquare(false);
     }
   };
-
   return (
     <>
       <div className="background" />
@@ -44,7 +43,7 @@ const App = () => {
         <br />
 
         <Routes>
-          <Route path="/" element={<Ghar />} />
+          <Route path="/" element={<Ghar />}/>
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
         </Routes>
