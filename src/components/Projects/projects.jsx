@@ -1,13 +1,25 @@
-
 import React from 'react';
 import './proj.css'; 
 
 const Projects = () => {
   return (
-    <div className="ProjPage">
-      <br/><br/><br/><br/>
-      <a href="https://github.com/Vivan-verma1109">Here's My GitHub</a>
+    <>
+    <div className = "back"/>
+
+    <div className='box'>
+      <div className='image'>
+
+      </div>
+
+      <div className="name">
+        <h1>Cat-Dog-AI</h1>
+      </div>
     </div>
+    
+    
+    
+    
+    </>
   );
 }
 
