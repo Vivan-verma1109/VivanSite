@@ -7,6 +7,12 @@ import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import bonfire from "/images/bonfire.gif";
 
+const welcomeTags = ["welcome", "välkommen", "willkommen", "bienvenue", "benvenuto", "bienvenidos", "velkominn"]
+
+function getRandom(max){
+  return Math.floor(Math.random() * (max + 1))
+}
+
 const App = () => {
   const [showNavigation, setShowNavigation] = useState(true);
   const [showSquare, setShowSquare] = useState(false);
@@ -26,7 +32,7 @@ const App = () => {
       <div className="background" />
       <div className="container">
         <div className="welcome">
-          <h1>welcome to my portfolio</h1>
+          <h1>{welcomeTags[getRandom(6)]} to my portfolio</h1>
         </div>
       </div>
 

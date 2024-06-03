@@ -105,10 +105,10 @@ body {
 
 .square.even-click{
   background-color: rosybrown;
-  animation: shrink 2s forwards;
+  animation: shrink 1s forwards;
 }
 
 .square.odd-click {
   background-color: rosybrown;
-  animation: elongate 2s forwards;
+  animation: elongate 1.3s forwards;
 }

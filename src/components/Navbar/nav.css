@@ -19,7 +19,7 @@
   left: 15px;
   position: absolute;
   bottom: 35vh;
-  animation: move1 2s forwards;
+  animation: move1 1.5s forwards;
 }
 
 .aboutIcon2 {
@@ -29,7 +29,7 @@
   position: absolute;
   bottom: 0;
   opacity: 0;
-  animation: back1 1.3s forwards;
+  animation: back1 1.5s forwards;
 }
 
 @keyframes move1 {
@@ -61,7 +61,7 @@
   position: absolute;
   bottom: 20vh;
   opacity: 1;
-  animation: move2 2s;
+  animation: move2 1.5s;
 }
 
 .proj2 {
@@ -71,7 +71,7 @@
   position: absolute;
   opacity: 0;
   bottom: 0;
-  animation: back2 1s;
+  animation: back2 1.5s;
 }
 @keyframes move2 {
   from {
@@ -102,7 +102,7 @@
   opacity: 1;
   left: 25px;
   bottom: 10vh;
-  animation: move3 2s;
+  animation: move3 1.5s;
 }
 
 @keyframes move3 {
@@ -123,7 +123,7 @@
   position: absolute;
   opacity: 0;
   bottom: 0;
-  animation: back3 1s;
+  animation: back3 1.5s;
 }
 
 @keyframes back3 {
