@@ -1,0 +1,20 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    background-color: transparent;
+    width: 100vw;
+    position: absolute;
+    user-select: none;
+  }
+  
+  .welcome h1 {
+    overflow: hidden;
+    font-size: 6vh;
+    user-select: none;
+    color: rgb(89, 50, 50);
+    font-family: "MC";
+    animation: fadein 2.5s;
+  }
