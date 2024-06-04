@@ -15,4 +15,25 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.boxing {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: transparent;
+  width: 100vw;
+  position: absolute;
+  user-select: none;
+}
+
+
+#core-concepts {
+  padding: 2rem;
+  border-radius: 6px;
+  background-color: #140524;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
 }

@@ -1,24 +1,38 @@
-import React from 'react';
-import './proj.css'; 
+import React from "react";
+import "./proj.css";
+import { PROJECTS } from "./data.js";
+
+function Proj(props) {
+  return (
+    <li>
+      <img src={props.image} />
+      <h3>{props.title}</h3>
+      <p>{props.description}</p>
+    </li>
+  );
+}
 
 const Projects = () => {
   return (
     <>
-    <div className = "back"/>
+      <div className="back" />
 
-    <div className='box'>
-      <div className='image'>
-
+      <div className="boxing">
+        <section id="proj">
+          <h2>Personal Projects</h2>
+          <ul>
+            <Proj
+              title={PROJECTS[0].title}
+              img={PROJECTS[0].image}
+              description={PROJECTS[0].description}
+            />
+            <Proj {...PROJECTS[1]} />
+            <Proj {...PROJECTS[2]} />
+          </ul>
+        </section>
       </div>
-
-      <div className="name">
-        <h1>Cat-Dog-AI</h1>
-      </div>
-    </div>
-    
-    
     </>
   );
-}
+};
 
 export default Projects;
