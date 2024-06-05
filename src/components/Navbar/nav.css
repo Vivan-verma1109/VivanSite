@@ -12,6 +12,10 @@
   bottom: 12vh;
 }
 
+.entire img:active {
+  opacity: 0.7;
+  transform: scale(0.95);
+}
 
 .aboutIcon1 {
   width: 100px;
@@ -73,6 +77,7 @@
   bottom: 0;
   animation: back2 1.5s;
 }
+
 @keyframes move2 {
   from {
     bottom: 0vh;
