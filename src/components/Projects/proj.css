@@ -18,6 +18,41 @@ body {
   z-index: -1;
 }
 
+#proj{
+  display: flex;
+  flex-direction: row;
+  height: 55vw;
+  left: 40vh;
+  top: -15vh;
+  background-color: transparent;
+  border-color: rgb(159, 130, 41, 0.3);
+  border-width: 10px;
+  width: 55vw;
+  border-style: solid;
+  position: absolute;
+  user-select: none;
+  animation: grow 0.5s;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.proj-image {
+  max-width: 15%;
+  height: auto;
+  border-radius: 8px;
+}
+.proj-description{
+  color: rgb(53, 60, 5);
+  font-size:x-large;
+}
+.proj-title{
+  color: rgb(53, 60, 5);
+  font-weight: bold;
+}
 .boxing {
   display: flex;
   flex-direction: row;

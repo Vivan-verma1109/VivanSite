@@ -4,10 +4,10 @@ import { PROJECTS } from "./data.js";
 
 function Proj(props) {
   return (
-    <li>
-      <img src={props.image} />
-      <h3>{props.title}</h3>
-      <p>{props.description}</p>
+    <li className="proj-item">
+      <a href = "https://github.com/Vivan-verma1109"><img src={props.image} alt={props.title} className="proj-image" /></a>
+      <h3 className="proj-title">{props.title}</h3>
+      <p className="proj-description">{props.description}</p>
     </li>
   );
 }
@@ -19,11 +19,10 @@ const Projects = () => {
 
       <div className="boxing">
         <section id="proj">
-          <h2>Personal Projects</h2>
           <ul>
             <Proj
               title={PROJECTS[0].title}
-              img={PROJECTS[0].image}
+              image={PROJECTS[0].image}
               description={PROJECTS[0].description}
             />
             <Proj {...PROJECTS[1]} />
