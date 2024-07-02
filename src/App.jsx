@@ -5,8 +5,8 @@ import Navigation from "./components/Navbar/Navigation";
 import Projects from "./components/Projects/projects";
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
+import Email from "./components/email/email.jsx";
 import bonfire from "/images/bonfire.gif";
-
 
 const App = () => {
   const [showNavigation, setShowNavigation] = useState(true);
@@ -38,9 +38,10 @@ const App = () => {
         <br />
 
         <Routes>
-          <Route path="/" element={<Ghar />}/>
+          <Route path="/" element={<Ghar />} />
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/email" element={<Email />} />
         </Routes>
       </div>
     </>
