@@ -14,6 +14,12 @@ const Navigation = ({ showNavigation }) => {
             className={showNavigation ? "aboutIcon1" : "aboutIcon2"}
           />
         </NavLink>
+        <NavLink to="/projects">
+          <img
+            src = "/images/github-logo.png"
+            className={showNavigation ? "projects1" : "projects2"}
+          />
+        </NavLink>
         <NavLink to="/email">
           <img
             src="https://i.pinimg.com/originals/71/c4/14/71c41419a3a25b09742aaf3dc648bb11.png"

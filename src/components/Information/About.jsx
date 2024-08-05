@@ -8,15 +8,16 @@ const About = () => {
 
       <div className="flbx">
         <div className="info">
-          <i><h1>My name is Vivan Verma</h1></i>
+          <i>
+            <h1>  My name is Vivan Verma  </h1>
+          </i>
           <h2>
             I live in the Bay Area and I am pursuing a degree in Computer
-            Science at Virginia Tech. As of right now, I am learning how to code
-            in React, and learning various topics through bootcamps. Regarding
-            actual projects that I have done, those can be seen by clicking on
-            the little computer icon. Outside of Computer Science, I spend much
-            of my time either at the gym or doing anything with friends, ranging
-            from gaming to grabbing food to sports.
+            Science at Virginia Tech. Right now I spend my time applying for
+            internships or leetcoding/working on projects. My socials is linked 
+            on the socials tab and you can email me through the computer icon. Outside of Computer
+            Science, I spend much of my time either at the gym or doing anything
+            with friends like: gaming, playing sports, grabbing food, etc..
           </h2>
         </div>
         <hr></hr>

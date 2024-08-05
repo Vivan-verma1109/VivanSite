@@ -18,18 +18,18 @@
 }
 
 .aboutIcon1 {
-  width: 100px;
+  width: 75px;
   z-index: 2;
-  left: 15px;
+  left: 30px;
   position: absolute;
-  bottom: 35vh;
+  bottom: 38vh;
   animation: move1 1.5s forwards;
 }
 
 .aboutIcon2 {
-  width: 100px;
+  width: 75px;
   z-index: 2;
-  left: 15px;
+  left: 30px;
   position: absolute;
   bottom: 0;
   opacity: 0;
@@ -42,14 +42,14 @@
     opacity: 0;
   }
   to {
-    bottom: 35vh;
+    bottom: 38vh;
     opacity: 1;
   }
 }
 
 @keyframes back1 {
   from {
-    bottom: 35vh;
+    bottom: 38vh;
     opacity: 1;
   }
   to {
@@ -58,20 +58,63 @@
   }
 }
 
-.em1 {
-  width: 150px;
+
+@keyframes move4 {
+  from {
+    bottom: 0vh;
+    opacity: 0;
+  }
+  to {
+    bottom: 29vh;
+    opacity: 1;
+  }
+}
+
+@keyframes back4 {
+  from {
+    bottom: 29vh;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+.projects1 {
+  width: 50px;
   z-index: 2;
-  left: -10px;
+  left: 43px;
   position: absolute;
-  bottom: 20vh;
+  bottom: 29vh;
+  opacity: 1;
+  animation: move4 1.5s;
+}
+
+.projects2 {
+  width: 50px;
+  z-index: 2;
+  left: 43px;
+  position: absolute;
+  opacity: 0;
+  bottom: 0;
+  animation: back4 1.5s;
+}
+
+.em1 {
+  width: 100px;
+  z-index: 2;
+  left: 17px;
+  position: absolute;
+  bottom: 16vh;
   opacity: 1;
   animation: move2 1.5s;
 }
 
 .em2 {
-  width: 150px;
+  width: 100px;
   z-index: 2;
-  left: -10px;
+  left: 17px;
   position: absolute;
   opacity: 0;
   bottom: 0;
@@ -84,14 +127,14 @@
     opacity: 0;
   }
   to {
-    bottom: 20vh;
+    bottom: 16vh;
     opacity: 1;
   }
 }
 
 @keyframes back2 {
   from {
-    bottom: 20vh;
+    bottom: 16vh;
     opacity: 1;
   }
   to {
@@ -101,12 +144,12 @@
 }
 
 .home1 {
-  width: 80px;
+  width: 50px;
   z-index: 2;
   position: absolute;
   opacity: 1;
-  left: 25px;
-  bottom: 10vh;
+  left: 40px;
+  bottom: 8vh;
   animation: move3 1.5s;
 }
 
@@ -116,15 +159,15 @@
     opacity: 0;
   }
   to {
-    bottom: 10vh;
+    bottom: 8vh;
     opacity: 1;
   }
 }
 
 .home2 {
-  width: 80px;
+  width: 50px;
   z-index: 2;
-  left: 25px;
+  left: 40px;
   position: absolute;
   opacity: 0;
   bottom: 0;
@@ -133,7 +176,7 @@
 
 @keyframes back3 {
   from {
-    bottom: 10vh;
+    bottom: 8vh;
     opacity: 1;
   }
   to {

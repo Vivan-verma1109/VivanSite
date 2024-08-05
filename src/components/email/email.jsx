@@ -49,8 +49,8 @@ const Email = () => {
           onChange={(e) => setEmail(e.target.value)}
         />
         <textarea
-          cols="30"
-          rows="10"
+          cols="50"
+          rows="2w0"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
         />
