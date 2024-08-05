@@ -62,7 +62,7 @@ body {
 
 @keyframes shrink {
   from {
-    height: 45vh;
+    height: 50%;
     opacity: 0.5;
   }
   to {
@@ -84,7 +84,7 @@ body {
 
 .square.even-click{
   background-color: rosybrown;
-  animation: shrink 1s forwards;
+  animation: shrink 2s forwards;
 }
 
 .square.odd-click {
