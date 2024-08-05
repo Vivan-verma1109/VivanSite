@@ -14,10 +14,10 @@ const Navigation = ({ showNavigation }) => {
             className={showNavigation ? "aboutIcon1" : "aboutIcon2"}
           />
         </NavLink>
-        <NavLink to="/projects">
+        <NavLink to="/email">
           <img
             src="https://i.pinimg.com/originals/71/c4/14/71c41419a3a25b09742aaf3dc648bb11.png"
-            className={showNavigation ? "proj1" : "proj2"}
+            className={showNavigation ? "em1" : "em2"}
           />
         </NavLink>
         <NavLink to="/">

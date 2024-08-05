@@ -3,7 +3,22 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    animation: fadein 1s;
 }
+.html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+@keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 
 .emailForm{
     display: flex;

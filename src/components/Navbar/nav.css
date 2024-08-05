@@ -58,7 +58,7 @@
   }
 }
 
-.proj1 {
+.em1 {
   width: 150px;
   z-index: 2;
   left: -10px;
@@ -68,7 +68,7 @@
   animation: move2 1.5s;
 }
 
-.proj2 {
+.em2 {
   width: 150px;
   z-index: 2;
   left: -10px;
