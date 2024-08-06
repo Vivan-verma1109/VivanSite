@@ -17,3 +17,54 @@ body {
   background-repeat: no-repeat;
   z-index: -1;
 }
+
+.gitflex{
+  display: flex;
+  flex-direction: row;
+  height: 250px;
+  left: 18vh;
+  top: 20vh;
+  width: 250px;
+  position: absolute;
+  user-select: none;
+  animation: grow 0.5s;
+}
+
+.git{
+  width: 250px;
+  height: 250px;
+}
+
+.linkflex{
+  display: flex;
+  flex-direction: row;
+  height: 250px;
+  left: 118vh;
+  top: 20vh;
+  width: 250px;
+  position: absolute;
+  user-select: none;
+  animation: grow 0.5s;
+}
+
+.linked{
+  width: 250px;
+  height: 250px;
+}
+.resume{
+  width: 250px;
+  height: 250px;
+  opacity: 0.8;
+}
+
+.resbox{
+  display: flex;
+  flex-direction: row;
+  height: 250px;
+  width: 250px;
+  top: 20vh;
+  left: 67vh;
+  position: absolute;
+  user-select: none;
+  animation: grow 0.5s;
+}
