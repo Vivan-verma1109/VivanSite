@@ -3,9 +3,9 @@ import Ghar from "./components/homepage/ghar";
 import About from "./components/Information/About";
 import Navigation from "./components/Navbar/Navigation";
 import Projects from "./components/Projects/projects";
+import Email from "./components/email/email.jsx";
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
-import Email from "./components/email/email.jsx";
 import bonfire from "/images/bonfire.gif";
 
 const App = () => {

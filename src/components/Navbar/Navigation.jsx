@@ -16,7 +16,7 @@ const Navigation = ({ showNavigation }) => {
         </NavLink>
         <NavLink to="/projects">
           <img
-            src = "/images/github-logo.png"
+            src = "images/github-logo.png"
             className={showNavigation ? "projects1" : "projects2"}
           />
         </NavLink>
