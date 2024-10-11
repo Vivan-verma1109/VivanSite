@@ -5,6 +5,24 @@ body {
   height: 100%;
 }
 
+.credit{
+  font-family: "MC";
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 10px;
+  font-size: 14px;;
+}
+
+.close{
+  font-family: "MC";
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin: 0px;
+  font-size: 14px;;
+}
+
 @font-face {
   font-family: "MC";
   src: local("MantiniaRegular"),
@@ -91,3 +109,4 @@ body {
   background-color: rosybrown;
   animation: elongate 1.3s forwards;
 }
+
