@@ -9,7 +9,7 @@ body {
   position: fixed;
   width: 100%;
   height: 100%;
-  background-image: url("https://api.wallpapers.ai/static/downloads/30b7dfbd2cdb447e9a1aca3b491569c0/upscaled/000000_867210296_kdpmpp2m15_PS7.5_soft_pink_winter_landscape._digital_art_concept_art_[upscaled].jpg");
+  background-image: url("/images/winter.png");
   background-repeat: no-repeat;
   background-size: cover;
   top: 0;

@@ -6,7 +6,7 @@ body {
 }
 
 @font-face {
-  font-family: "MC"; /*Can be any text*/
+  font-family: "MC";
   src: local("MantiniaRegular"),
     url("./fonts/MantiniaRegular.otf") format("truetype");
 }
