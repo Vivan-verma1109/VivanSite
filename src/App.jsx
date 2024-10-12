@@ -1,10 +1,10 @@
 import React, { useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Ghar from "./components/homepage/ghar";
 import About from "./components/Information/About";
 import Navigation from "./components/Navbar/Navigation";
 import Projects from "./components/Projects/projects";
 import Email from "./components/email/email.jsx";
-import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import bonfire from "/images/bonfire.gif";
 
@@ -38,12 +38,14 @@ const App = () => {
         <br />
         <h3 class="credit">credit to raszkin's Artwork </h3>
 
+      <Router>
         <Routes>
           <Route path="/" element={<Ghar />} />
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/email" element={<Email />} />
         </Routes>
+      </Router>
       </div>
 
     </>
