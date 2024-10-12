@@ -18,7 +18,7 @@ body {
 @font-face {
   font-family: "MC";
   src: local("MantiniaRegular"),
-    url("./fonts/MantiniaRegular.otf") format("truetype");
+    url("/fonts/MantiniaRegular.otf") format("truetype");
 }
 
 @keyframes fadein {
@@ -34,7 +34,7 @@ body {
   position: fixed;
   width: 100%;
   height: 100%;
-  background-image: url("./images/yosemite.png");
+  background-image: url("/images/yosemite.png");
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -1;
