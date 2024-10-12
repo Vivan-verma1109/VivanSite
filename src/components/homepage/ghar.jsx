@@ -1,21 +1,44 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./ghar.css";
 
-const welcomeTags = ["welcome", "välkommen", "willkommen", "bienvenue", "benvenuto", "bienvenidos", "velkominn"]
-
-function getRandom(max){
-  return Math.floor(Math.random() * (max + 1))
-}
+const welcomeTags = [
+  "welcome",
+  "välkommen",
+  "willkommen",
+  "bienvenue",
+  "benvenuto",
+  "bienvenidos",
+  "velkominn"
+];
 
 const Ghar = () => {
+  const [currentTag, setCurrentTag] = useState(welcomeTags[0]);
+  const [fadeClass, setFadeClass] = useState("fade");
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setFadeClass("fade fade-out");
+
+
+      setTimeout(() => {
+        setCurrentTag(welcomeTags[getRandom(welcomeTags.length - 1)]);
+        setFadeClass("fade");
+      }, 1000); 
+    }, 3000);
+
+    return () => clearInterval(intervalId); 
+  }, []);
+
+  function getRandom(max) {
+    return Math.floor(Math.random() * (max + 1));
+  }
+
   return (
-    <>
-      <div className="container">
-        <div className="welcome">
-          <h1>{welcomeTags[getRandom(6)]} to my portfolio</h1>
-        </div>
+    <div className="container">
+      <div className={`welcome ${fadeClass}`}>
+        <h1>{currentTag} to my portfolio</h1>
       </div>
-    </>
+    </div>
   );
 };
 

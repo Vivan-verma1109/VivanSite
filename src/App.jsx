@@ -37,7 +37,6 @@ const App = () => {
       <div className="pageMain">
         <br />
         <h3 class="credit">credit to raszkin's Artwork </h3>
-        <h3 class="close">click bonfire to close/open</h3>
 
         <Routes>
           <Route path="/" element={<Ghar />} />

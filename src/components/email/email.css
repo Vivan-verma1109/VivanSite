@@ -1,9 +1,9 @@
 .flexbox{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    animation: fadein 1s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: fadein 1s forwards;
 }
 .html,
 body {
@@ -16,15 +16,19 @@ body {
       opacity: 0;
     }
     to {
-      opacity: 1;
+      opacity: 0.5;
     }
   }
 
 .emailForm{
     display: flex;
+    opacity: 0.5;
     flex-direction: column;
 }
 
 input, textarea{
     margin: 10px 0px;
+    border: none;
+    font-weight: bold;
+    background-color: beige;
 }

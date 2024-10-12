@@ -17,4 +17,15 @@
     color: rgb(89, 50, 50);
     font-family: "MC";
     animation: fadein 2.5s;
+    font-weight: bold;
   }
+
+  .fade {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .fade-out {
+    opacity: 0;
+  }
+  

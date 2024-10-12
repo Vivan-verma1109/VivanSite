@@ -8,18 +8,10 @@ body {
 .credit{
   font-family: "MC";
   position: fixed;
+  color: white;
   bottom: 0;
   right: 0;
   margin: 10px;
-  font-size: 14px;;
-}
-
-.close{
-  font-family: "MC";
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  margin: 0px;
   font-size: 14px;;
 }
 
@@ -42,7 +34,7 @@ body {
   position: fixed;
   width: 100%;
   height: 100%;
-  background-image: url("https://api.wallpapers.ai/static/downloads/98e970e6bfef4cb8936c6480cb57f481/upscaled/000000_490936417_kdpmpp2m15_PS7.5_elden_ring_landscape._digital_art_concept_art_[upscaled].jpg");
+  background-image: url("images/yosemite.png");
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -1;
