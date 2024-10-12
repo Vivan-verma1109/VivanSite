@@ -38,14 +38,12 @@ const App = () => {
         <br />
         <h3 class="credit">credit to raszkin's Artwork </h3>
 
-      <Router>
         <Routes>
           <Route path="/" element={<Ghar />} />
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/email" element={<Email />} />
         </Routes>
-      </Router>
       </div>
 
     </>
