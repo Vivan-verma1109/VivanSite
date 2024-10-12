@@ -2,6 +2,7 @@
   "name": "vivan-s-website",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://vivan-verma1109.github.io/VivanSite/",
   "type": "module",
   "scripts": {
     "dev": "vite",
